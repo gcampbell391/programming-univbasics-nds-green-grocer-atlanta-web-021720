@@ -74,13 +74,13 @@ cart
 end
 
 def checkout(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # This method should call
-  # * consolidate_cart
-  # * apply_coupons
-  # * apply_clearance
-  #
-  # BEFORE it begins the work of calculating the total (or else you might have
-  # some irritated customers
+  consolidated_cart = consolidate_cart(cart)
+  couponed_cart = apply_coupons(consolidated_cart)
+  final_cart = apply_clearance(couponed_cart)
+  counter = 0 
+  total = 0 
+  while counter < final_cart.length 
+  
+  end 
+  
 end
