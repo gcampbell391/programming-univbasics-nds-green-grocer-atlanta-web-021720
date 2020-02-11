@@ -70,6 +70,7 @@ def apply_clearance(cart)
     counter += 1
 end 
 pp cart 
+
 end
 
 def checkout(cart, coupons)
