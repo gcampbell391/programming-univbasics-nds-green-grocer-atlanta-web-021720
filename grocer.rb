@@ -64,13 +64,13 @@ def apply_clearance(cart)
   while counter < cart.length do
     if cart[counter][:clearance] == true 
       item_price = cart[counter][:price]
-      item_price = item_price - (item_price* 0.2 )
+      new_item_price = item_price - (item_price* 0.2 )
+      item_price = new_item_price
     else
     end 
     counter += 1
 end 
-pp cart 
-binding.pry
+pp cart
 end
 
 def checkout(cart, coupons)
