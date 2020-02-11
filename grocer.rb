@@ -61,12 +61,10 @@ end
 
 def apply_clearance(cart)
   counter = 0 
-  while counter < cart.length 
+  while counter < cart.length do
     if cart[counter][:clearance] == true 
       item_price = cart[counter][:price]
       item_price = item_price - (item_price*.2)
-    else
-    
     end 
   counter += 1 
 end 
