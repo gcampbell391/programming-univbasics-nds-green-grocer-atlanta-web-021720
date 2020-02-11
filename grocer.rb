@@ -65,8 +65,10 @@ def apply_clearance(cart)
     if cart[counter][:clearance] == true 
       item_price = cart[counter][:price]
       item_price = item_price - (item_price*.2)
+      counter += 1
+    else
+      counter += 1 
     end 
-  counter += 1 
 end 
 cart 
 end
